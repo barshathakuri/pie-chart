@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* force change the defualt colors for the Legends */
+.recharts-legend-wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+}
+.recharts-default-legend {
+  display: flex;
+}
+
+.recharts-legend-item {
+  width: auto;
+  height: auto;
+}
+.recharts-legend-item-text {
+  color: #665050 !important;
+}
