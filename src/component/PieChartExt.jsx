@@ -31,8 +31,6 @@ class PieChartExt extends PureComponent {
          axios.get(projApiUri).then((projectData) =>{ // fetch Proj data
 
          const projGroupByOid = projectData.data.results.reduce((acc, it) => (acc[it.oid] = (acc[it.oid] || 0) + 1, acc), {}); // count proj per organization
-         
-         // {"2" : 8, "6" : 1}
 
          const orgsWithProjs =  Object.keys(projGroupByOid); // ["2", "6"]
 
